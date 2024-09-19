@@ -12,10 +12,10 @@ const treePage = document.querySelector(".treePage")
 const successPage = document.querySelector(".successPopup")
 
 loginbutton.onclick = function() {
-    console.log("There")
     homePageContent.setAttribute('style', 'filter: blur(0px) brightness(1)')
     loginForm.setAttribute('style', 'visibility: hidden;')
     popUp.setAttribute('style', 'z-index: 0;')
+    console.log("There")
 }
 
 Maplink.onclick = function() {
@@ -27,11 +27,11 @@ Maplink.onclick = function() {
 }
 
 haveWater.onclick = function() {
-    console.log("great")
     popUp.setAttribute("style", "z-index: -1;")
     questionpopup.setAttribute("style", "visibility: hidden;")
     treePage.setAttribute('style', 'z-index: 1;')
     treePage.setAttribute('style', 'visibility: visible;')
+    console.log("great")
 }
 
 waterTree.onclick = function () {
