@@ -1,6 +1,7 @@
 const loginbutton = document.getElementById("login");
 const Maplink = document.querySelector(".Map")
 const haveWater = document.querySelector("#Yes")
+const waterTree = document.querySelector(".waterTree")
 
 
 const loginForm = document.querySelector(".login")
@@ -8,7 +9,7 @@ const homePageContent = document.querySelector(".homePage");
 const popUp = document.querySelector(".popup")
 const questionpopup = document.querySelector("#question")
 const treePage = document.querySelector(".treePage")
-
+const successPage = document.querySelector(".successPopup")
 
 loginbutton.onclick = function() {
     console.log("There")
@@ -31,4 +32,10 @@ haveWater.onclick = function() {
     questionpopup.setAttribute("style", "visibility: hidden;")
     treePage.setAttribute('style', 'z-index: 1;')
     treePage.setAttribute('style', 'visibility: visible;')
+}
+
+waterTree.onclick = function () {
+    successPage.setAttribute('style', 'visibility: visible;')
+    successPage.setAttribute('style', 'visibility: visible;')
+    console.log("Yay")
 }
