@@ -156,10 +156,10 @@ a {
 
 .button {
     font-size: 25px;
-    width: min-content;
+    width: max-content;
     background-color: #14AE5C;
+    border-width: 0px;
     color:black;
-    border:solid 0px #000000;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -189,8 +189,6 @@ a {
     height: 210px;
     display: flex;
     border-radius: 10px;
-    /* flex-direction: column; */
-    /* filter: opacity(50%); */
     justify-content: center;
     align-items: center;
     color: #ffffff;
@@ -198,7 +196,7 @@ a {
     overflow: visible;
 }
 
-.popup button {
+.buttons > button {
     border-width: 0px;
     border-radius: 10px;
     width: 140px;
@@ -209,7 +207,6 @@ a {
 
 .Question p {
     font-size: 90px;
-    /* margin: 0px; */
     padding-bottom: 30px;
     margin-right: auto;
     margin-left: auto ;
@@ -229,4 +226,72 @@ a {
 
 #negative {
     background-color: #8b2927;
+}
+
+/* Tree details page */
+.treePage {
+    position: absolute;
+    top: 0%;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    overflow: hidden;
+    justify-items: center;
+    visibility: hidden;
+}
+
+.imdetails{
+    grid-area: 1/1 / 2/-1;
+    margin-left: auto;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.imdetails h4 {
+    width: max-content;
+    margin-left: auto;
+    background-color: #F4F2F2;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+.treePage > .form {
+    height: min-content;
+    grid-area: 2/1 / -1/-1;
+    width: 250px;
+}
+
+.imdetails img {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F4F2F2;
+}
+
+.treePage p {
+    display: flex;
+    flex-direction: column;
+}
+
+.treePage form h1 {
+    text-align: left;
+    margin: 0;
+}
+.form h2 {
+    margin: 0;
+}
+.form h3 {
+    margin: 0;
+}
+.form h4 {
+    margin: 0;
+}
+.selTree{
+    height: 100%;
+    grid-area: 1/1 / -1/-1;
 }

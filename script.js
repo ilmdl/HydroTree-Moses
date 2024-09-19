@@ -7,6 +7,7 @@ const loginForm = document.querySelector(".login")
 const homePageContent = document.querySelector(".homePage");
 const popUp = document.querySelector(".popup")
 const questionpopup = document.querySelector("#question")
+const treePage = document.querySelector(".treePage")
 
 
 loginbutton.onclick = function() {
