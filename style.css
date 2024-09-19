@@ -1,0 +1,86 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Homepage styles */
+body {
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    height: 800px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.Map{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Memories styling */
+.Memories {
+    position: absolute;
+    top: 80%;
+    width: min-content;
+    height: 500px;
+    background-color: #1C1100;
+    display: grid;
+    grid-template-columns: 40px 5fr 5fr 40px;
+    grid-template-rows: auto auto auto auto 25px;
+    /* grid-auto-rows: auto; */
+    /* grid-auto-flow: row; */
+    overflow:hidden;
+    border-radius: 20px;
+}
+
+.Memories:hover {
+    top: 49%;
+}
+
+.bar {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-area: 1/2 / 1/-2;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 4px;
+    z-index: 1;
+}
+
+.Memories > h1 {
+    z-index: 1;
+    grid-area: 1/2 / 1/-2;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0px;
+}
+ 
+/* Photos for memories */
+.photo {
+    width:130px;
+    margin: 5px;
+    z-index: 1;
+}
+.photo-1 {
+    grid-area: 2/2 / 3/3;
+}
+.photo-2 {
+    grid-area: 2/3 / 3/4;
+}
+.photo-3 {
+    grid-area: 3/2 / 4/3;
+}
+.photo-4 {
+    grid-area: 3/3 / 4/4;
+}
+
+.MemoriesBack {
+    height: 100%;
+    grid-area: 1/1 / -1/-1;
+    filter: blur(2px) opacity(25%);
+}
